@@ -24,6 +24,7 @@ build: $(CLASS_FILES)
 $(BIN_DIR)/%.class: $(SRC_DIR)/%.java
 	$(JAVAC) $(JFLAGS) $<
 
+
 # Target to run the RMI client
 run: build
 	$(JAVA) $(JAVAFLAGS) CalculatorClient
