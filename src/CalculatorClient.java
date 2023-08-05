@@ -1,3 +1,5 @@
+package src;
+
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
@@ -25,9 +27,6 @@ public class CalculatorClient {
             // Pop the results and display them
             System.out.println("Minimum value: " + calculator.pop());
             // System.out.println("Maximum value: " + calculator.pop());
-
-
-
 
             calculator.pushValue(10);
             calculator.pushValue(5);
